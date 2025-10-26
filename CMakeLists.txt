@@ -21,3 +21,5 @@ macro(add_example name)
 endmacro()
 
 add_example(eye)
+add_example(expand)
+add_example(add_inplace)

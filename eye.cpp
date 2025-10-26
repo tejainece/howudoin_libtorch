@@ -9,7 +9,7 @@ void pretty_print(const std::string& info, T&& data) {
 
 int main() {
   // Create an eye tensor
-  torch::Tensor tensor = torch::eye(10);
+  torch::Tensor tensor = torch::eye(10, at::device(at::kMetal).memory_format(at::MemoryFormat::Contiguous));
   pretty_print("Eye tensor: ", tensor);
 
   // Tensor view is like reshape in numpy, which changes the dimension representation of the tensor
