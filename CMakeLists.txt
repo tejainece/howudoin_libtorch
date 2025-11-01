@@ -20,6 +20,7 @@ macro(add_example name)
   target_compile_features(${name} PRIVATE cxx_std_17)
 endmacro()
 
+add_example(ones)
 add_example(eye)
 add_example(expand)
 add_example(add_inplace)
